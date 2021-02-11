@@ -32,7 +32,7 @@ const ImgArr = images.map((img) => {
 const newLi = document.createElement("li");
 newLi.insertAdjacentHTML(
     "afterbegin",
-    `<img class="gallery_img" src="${img.url}" alt="${img.alt}"  width="400" height="200">`
+    `<img class="gallery_img" src="${img.url}" alt="${img.alt}"  width="600" height="300">`
   );
   return newLi;
 });

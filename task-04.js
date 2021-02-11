@@ -7,14 +7,25 @@
 // Добавь слушатели кликов на кнопки, вызовы
 //  функций и обновление интерфейса
 
-let counterValue = 0;
+let counterValue = document.querySelector('span#value');
+//console.log (counterValue);
+let buttonRef = document.querySelectorAll('button');
+//console.log(buttonRef[0]);
+//console.log(buttonRef[1]);
 
 let increment = function (){
-
-
+    counterValue.textContent ++;
 };
-
 let decrement = function (){
+    counterValue.textContent --;
+ };
 
-    
-} ;
+buttonRef[0].addEventListener("click",(event)=>{
+    decrement();
+    event.preventDefault();
+});
+
+buttonRef[1].addEventListener("click",(event)=>{
+    increment();
+    event.preventDefault();
+});

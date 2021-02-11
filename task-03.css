@@ -1,0 +1,23 @@
+
+html{
+  background-color: bisque;
+}
+ul,li {
+    display: flex;
+  	height: 100px;
+    list-style: none;
+    margin: auto;
+      
+}
+h1{
+    color: blue;
+    display: flex;
+    justify-content: center;
+    font-family: verdana;
+    font-size:300%;
+    
+};
+
+
+
+
